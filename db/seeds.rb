@@ -59,3 +59,4 @@
     # Auditorium.create(seats_available: 25, cost: 11.00)
     # Auditorium.create(seats_available: 25, cost: 11.00)
 
+# Showtime.create(movie_id:1, auditorium_id:1)
