@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
 
     def home 
         @movies = Movie.all
+        # @showtimes = Showtime.all
     end
 
     def new 

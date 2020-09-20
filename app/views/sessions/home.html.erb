@@ -3,5 +3,8 @@
 <h3><%= link_to "Signup", signup_path %> or <%= link_to "Login", login_path %></h3>
 
 <% @movies.each do |m| %>
-     <h3><%= link_to m.title, movie_path(m) %> </h3> 
+     <h3><%= link_to m.title, movie_path(m) %> </h3>
 <% end %>
+
+
+
