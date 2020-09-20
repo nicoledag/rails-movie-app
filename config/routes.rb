@@ -10,6 +10,7 @@ get '/logout' => 'sessions#destroy'
 resources :users
 resources :movies
 resources :orders
+resources :showtimes
 
 
 
