@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
     end
 
     def new 
-        # if logged_in?
-        #   redirect_to projects_path
-        # end
+        if logged_in?
+          redirect_to root_path
+        end
     end
 
 
