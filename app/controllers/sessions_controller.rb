@@ -6,22 +6,22 @@ class SessionsController < ApplicationController
     end
 
     def new 
-        if logged_in?
+        # if logged_in?
         #   redirect_to projects_path
-        end
+        # end
     end
 
 
     def create
         @user = User.find_by(username: params[:username])
-        if @user && @user.authenticate(params[:password])
-        set_session_and_redirect
-        else
-            redirect_to login_path  #Does not allow for field w/errors and does not keep data.
-            #not rendering log in for extra security.  User needs to reenter information.
+        # if @user && @user.authenticate(params[:password])
+        # set_session_and_redirect
+        # else
+        #     redirect_to login_path  #Does not allow for field w/errors and does not keep data.
+        #     #not rendering log in for extra security.  User needs to reenter information.
 
-            flash[:message] = "There was an error with your request. Please try again."
-        end
+        #     flash[:message] = "There was an error with your request. Please try again."
+        # end
     end
 
     def destroy
