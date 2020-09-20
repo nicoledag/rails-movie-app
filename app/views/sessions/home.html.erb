@@ -2,10 +2,19 @@
 
 <h3><%= link_to "Signup", signup_path %> or <%= link_to "Login", login_path %></h3>
 
-<% @movies.each do |m| %>
-     <%= image_tag "#{m.image}", style: '' %>
-     <h3><%= link_to m.title, movie_path(m) %> </h3>
-<% end %>
+<div class= "movies-container">
+     <% @movies.each do |m| %>
+          <div class="movie">
+               <%= link_to movie_path(m) do %>
+               <%= image_tag "#{m.image}", alt: "#{m.title}", class: "movie-image" %>
+               <h2> <%= "#{m.title}" %> </h2> 
+               <% end %>
+          </div>
+     <% end %>
+</div>
+
+
+
 
 
 
