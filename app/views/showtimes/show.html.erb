@@ -1,0 +1,18 @@
+<h3> <%= "#{@showtime.format_date}" %> </h3> 
+<h3> <%= "#{@showtime.format_time}" %> </h3> 
+<h3> <%= "Seats Available: #{@showtime.seats_available}" %> </h3> 
+<h3> <%= "Seat Cost: $ #{@showtime.seat_cost}.00" %> </h3> 
+
+
+<h2>Order Tickets</h2>
+
+<%=form_for @order do |f| %>
+
+ <%= render partial: 'layouts/errors', locals: {object: @order} %>
+  <%= f.label :total_seats_selected %>
+  <%= f.text_field :total_seats_selected %>
+
+<% end %>
+
+
+<%= link_to "Buy Tickets", new_order_path %>
