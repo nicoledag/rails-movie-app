@@ -3,7 +3,7 @@ class Showtime < ApplicationRecord
     belongs_to :movie
     has_many :orders
 
-    validates :title, :length, :image, presence: true
+    validates :seats_available, :seat_cost, :start_time, presence: true
 
     def format_date
         self.date.strftime("%m/%d/%Y")
