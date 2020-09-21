@@ -6,7 +6,7 @@ class Showtime < ApplicationRecord
     validates :seats_available, :seat_cost, :start_time, presence: true
 
     def format_date
-        self.date.strftime("%m/%d/%Y")
+        self.date.strftime("%a, %m/%d/%Y")
     end
 
     def format_time

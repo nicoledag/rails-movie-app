@@ -19,8 +19,8 @@
     <div class="show-container">
         <% @movie.showtimes.each do |s| %>
             <div class="showtime">
-                <h3> <%= "Date:  #{s.format_date}" %> </h3> 
-                <h3> <%= "Start Time:  #{s.format_time}" %> </h3> 
+                <h3> <%= "#{s.format_date}" %> </h3> 
+                <h3> <%= "#{s.format_time}" %> </h3> 
                 <h3> <%= "Available Seats:  #{s.seats_available}" %> </h3> 
                 <h3> <%= "Seat Cost:  $#{s.seat_cost}.00" %> </h3> 
             </div>
