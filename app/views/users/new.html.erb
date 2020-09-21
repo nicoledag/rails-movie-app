@@ -1,16 +1,28 @@
+<div class="container-form">
+
 <h2>Sign Up</h2>
 
 <%=form_for @user do |f| %>
 
  <%= render partial: 'layouts/errors', locals: {object: @user} %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+ 
+  <div class="row"> 
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
 
-  <%= f.label :email%>
-  <%= f.email_field :email %>
+  <div class="row"> 
+    <%= f.label :email%>
+    <%= f.email_field :email %>
+  </div>
 
-  <%= f.label :password%>
-  <%= f.password_field :password %>
+  <div class="row"> 
+    <%= f.label :password%>
+    <%= f.password_field :password %>
+  </div>
 
   <%= f.submit "Sign In" %>
 <% end %>
+
+
+<div>
