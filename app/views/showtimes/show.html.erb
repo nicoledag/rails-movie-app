@@ -9,9 +9,10 @@
 
 
 <% if !logged_in? %>
-<h3><%= link_to "Login or Check Out Below as Guest", login_path %></h3>
+<h3><%= link_to "Login Here", login_path %></h3>
 <% end %>
-
+<h3>OR</h3>
+<h3>Check Out Below as Guest</h3>
 <%=form_for @order do |f| %>
 <%= f.hidden_field :showtime_id, :value => @showtime.id %>
  <%= render partial: 'layouts/errors', locals: {object: @order} %>
