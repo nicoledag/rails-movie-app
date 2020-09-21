@@ -16,7 +16,7 @@ class UsersController < ApplicationController
         @user = User.new(user_params)
         if @user.save
         session[:user_id] = @user.id
-        #redirect_to projects_path     #projects/index page
+        redirect_to root_path   
         else
         render :new  #lets us call field w/errors.  Keeps inputted data.  #renders users/new form.
         end
