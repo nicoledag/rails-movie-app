@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
     end
 
     def create
-        # binding.pry
+        binding.pry
     end
 
     private
