@@ -9,6 +9,8 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     // border: black 1px solid;
+    width: 100%;
+    
 }
 
 .showtime {
@@ -16,6 +18,13 @@
     padding: 10px;
     border: gray 1px solid;
     text-align: center;
+}
+.showtime h3 {
+    color: black;
+}
+
+.showtime:hover {
+    box-shadow: 5px 5px 4px 5px lightgray;
 }
 
 .show-header {
@@ -25,9 +34,9 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     // border: black 1px solid;
-    // height: 600px;
 }
 
 .show-info {
-    margin: 15px;
+    margin-left: 15px;
 }
+
