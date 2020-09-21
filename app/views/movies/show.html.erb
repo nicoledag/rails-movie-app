@@ -1,15 +1,15 @@
-<%= image_tag "#{@movie.image}", alt: "#{@movie.title}", class: "movie-image" %>
+<%= image_tag "#{@movie.image}", alt: "#{@movie.title}", class: "" %>
 
 <h2> <%= "#{@movie.title}" %></h2>
-<h2> <%= "#{@movie.length}" %></h2>
+<h3> <%= "#{@movie.length}" %></h3>
+
 <% @movie.genres.each do |g| %>
-       <h2> <%= "#{g.name}" %> </h2> 
+       <h3> <%= "#{g.name}" %> </h3> 
 <% end %>
 
 <% @movie.showtimes.each do |s| %>
-    <h2> <%= "Date: #{s.date}" %> </h2> 
-    <h2> <%= "Start Time: #{s.start_time}" %> </h2> 
-    <h2> <%= "Availabe Seats: #{s.seats_available}" %> </h2> 
-    <h2> <%= "Seat Cost: $#{s.seat_cost}.00" %> </h2> 
-
+    <h3> <%= "Date:  #{s.format_date}" %> </h3> 
+    <h3> <%= "Start Time:  #{s.format_time}" %> </h3> 
+    <h3> <%= "Available Seats:  #{s.seats_available}" %> </h3> 
+    <h3> <%= "Seat Cost:  $#{s.seat_cost}.00" %> </h3> 
 <% end %>
