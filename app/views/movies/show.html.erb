@@ -1,15 +1,30 @@
-<%= image_tag "#{@movie.image}", alt: "#{@movie.title}", class: "" %>
+    <div class="show-header">
+        <div class="show-top">
+            <%= image_tag "#{@movie.image}", alt: "#{@movie.title}", class: "" %>
+        </div>
 
-<h2> <%= "#{@movie.title}" %></h2>
-<h3> <%= "#{@movie.length}" %></h3>
+        <div class="show-info"
+            <h2> <%= "#{@movie.title}" %></h2>
+            <h3> <%= "Length: #{@movie.length}" %></h3>
 
-<% @movie.genres.each do |g| %>
-       <h3> <%= "#{g.name}" %> </h3> 
-<% end %>
+            <h3>Genres</h3>
+            <% @movie.genres.each do |g| %>
+                <h3> <%= "#{g.name}" %> </h3> 
+            <% end %>
+        </div>
 
-<% @movie.showtimes.each do |s| %>
-    <h3> <%= "Date:  #{s.format_date}" %> </h3> 
-    <h3> <%= "Start Time:  #{s.format_time}" %> </h3> 
-    <h3> <%= "Available Seats:  #{s.seats_available}" %> </h3> 
-    <h3> <%= "Seat Cost:  $#{s.seat_cost}.00" %> </h3> 
-<% end %>
+
+    </div>
+
+    <div class="show-container">
+        <% @movie.showtimes.each do |s| %>
+            <div class="showtime">
+                <h3> <%= "Date:  #{s.format_date}" %> </h3> 
+                <h3> <%= "Start Time:  #{s.format_time}" %> </h3> 
+                <h3> <%= "Available Seats:  #{s.seats_available}" %> </h3> 
+                <h3> <%= "Seat Cost:  $#{s.seat_cost}.00" %> </h3> 
+            </div>
+        <% end %>
+    </div>
+
+
