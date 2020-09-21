@@ -2,7 +2,7 @@ class ShowtimesController < ApplicationController
     before_action :set_movie, only: [:show]
 
     def new
-      @order = Order.new
+      # @order = Order.new
     end
 
     def show 
