@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
     def new
         if logged_in?
-        # redirect_to projects_path
+        redirect_to root_path
         else
         @user = User.new
         end

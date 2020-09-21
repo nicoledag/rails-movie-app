@@ -13,13 +13,16 @@
 <h3>OR</h3>
 <h3>Check Out Below as Guest</h3>
 <% end %>
+
 <%=form_for @order do |f| %>
-<%= f.hidden_field :showtime_id, :value => @showtime.id %>
- <%= render partial: 'layouts/errors', locals: {object: @order} %>
+
+  <%= render partial: 'layouts/errors', locals: {object: @order} %>
+
+ <%= f.hidden_field :showtime_id, :value => @showtime.id %>
  
  <div class="row"> 
   <%= f.label :total_seats_selected %>
-  <%= f.number_field :total_seats_selected %>
+  <%= f.text_field :total_seats_selected %>
  </div>
 
  <div class="row"> 
