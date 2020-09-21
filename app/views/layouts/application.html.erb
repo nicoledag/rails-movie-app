@@ -11,11 +11,35 @@
 
   <body>
 
+  <div class="topnav" id="myTopnav">
+         <a href="<%=root_path%>" class="active">Home</a>
+         <% if current_user %>
+         <a href="<%=logout_path%>">Sign out</a>
+         <% end %>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+    <br>
+    <br>
+  
+
       <% if flash[:message] %>
       <div class="message"><%= flash[:message] %></div>
       <br>
       <% end %>
       
     <%= yield %>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
   </body>
 </html>
