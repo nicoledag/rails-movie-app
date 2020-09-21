@@ -1,15 +1,24 @@
+<div class="container-form">
+
+
 <h2>Log In</h2>
 
 <%=form_tag(login_path) do %>
+  <div class="row"> 
+    <%= label_tag(:username, "Username") %>
+    <%= text_field_tag :username %>
+  </div>
+  <div class="row"> 
+    <%= label_tag(:email, "Email") %>
+    <%= email_field(:user, :email) %>
+  </div>
+  <div class="row"> 
+    <%= label_tag(:password, "Password") %>
+    <%= password_field_tag "password" %>
+  </div>
 
-  <%= label_tag(:username, "Username") %>
-  <%= text_field_tag :username %>
-
-  <%= label_tag(:email, "Email") %>
-  <%= email_field(:user, :email) %>
-
-  <%= label_tag(:password, "Password") %>
-  <%= password_field_tag "password" %>
 
   <%= submit_tag "Log In" %>
 <% end %>
+
+<div>
