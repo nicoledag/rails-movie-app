@@ -13,6 +13,12 @@
 
   <div class="topnav" id="myTopnav">
          <a href="<%=root_path%>" class="active">Home</a>
+         <% if !logged_in? %>
+         <a href="<%=signup_path%>">Signup</a>
+         <% end %>
+         <% if !logged_in? %>
+         <a href="<%=login_path%>">Login</a>
+         <% end %>
          <% if current_user %>
          <a href="<%=logout_path%>">Sign out</a>
          <% end %>

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    skip_before_action :redirect_if_not_logged_in
+    # skip_before_action :redirect_if_not_logged_in
 
     def new
         if logged_in?
