@@ -5,6 +5,17 @@ class Showtime < ApplicationRecord
 
     validates :seats_available, :seat_cost, :start_time, presence: true
 
+    # vailidate :seats_available_for_purchase
+
+    # def seats_available_for_purchase
+    #     if seats_available 
+    #         s = seats_available
+    #         if s < 0
+    #             errors.add :seats_available, 'Show is Sold Out!'
+    #         end
+    #     end
+    # end
+
     def format_date
         self.date.strftime("%a, %m/%d/%Y")
     end
@@ -12,4 +23,9 @@ class Showtime < ApplicationRecord
     def format_time
         self.start_time.strftime("%l:%M %p")
     end
+
+   
+
+
+    
 end

@@ -4,7 +4,6 @@ class Order < ApplicationRecord
     belongs_to :user
     
     validates :total_seats_selected, :credit_card_number, :expiration_date, presence: true
-
     validates :total_seats_selected, length: { in: 1..6 }
     validates :credit_card_number, length: { in: 13..16 }
 
