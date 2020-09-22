@@ -6,6 +6,7 @@ get '/signup' => 'users#new'
 get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'
 get '/logout' => 'sessions#destroy'
+get '/all_orders' => 'orders#all_orders'
 
 resources :users
 resources :movies
