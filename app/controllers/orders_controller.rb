@@ -6,6 +6,10 @@ class OrdersController < ApplicationController
       @orders = Order.all.order(created_at: :desc)
     end
 
+    def orders_by_movie
+      @orders = Order.all.orders_by_movie
+    end
+
     def index
         @orders = current_user.orders.order(created_at: :desc)
     end
