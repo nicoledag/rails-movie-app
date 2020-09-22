@@ -9,6 +9,8 @@ class MoviesController < ApplicationController
 
     def show
         # binding.pry
+
+        @movie_orders = @movie.orders
     end
 
 

@@ -19,9 +19,9 @@ class Order < ApplicationRecord
         self.order(created_at: :desc)
     end
 
-    def self.orders_by_movie
-        self.sort_by(movies_id: :desc)
-    end
+    # def self.orders_by_movie
+    #     self.sort_by{|order| order.}
+    # end
 
 
 end

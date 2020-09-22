@@ -7,7 +7,6 @@ get '/login' => 'sessions#new'
 post '/login' => 'sessions#create'
 get '/logout' => 'sessions#destroy'
 get '/all_orders' => 'orders#all_orders'
-get '/orders_by_movie' => 'orders#orders_by_movie'
 
 resources :users
 resources :movies

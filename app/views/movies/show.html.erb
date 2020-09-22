@@ -1,5 +1,5 @@
     <div class="show-header">
-        <div class="show-top">
+     <div class="show-top">
             <%= image_tag "#{@movie.image}", alt: "#{@movie.title}", class: "" %>
         </div>
 
@@ -15,7 +15,8 @@
 
 
     </div>
-
+    
+    <h2>Showtimes</h2> 
     <div class="show-container">
         <% @movie.showtimes.each do |s| %>
             <div class="showtime">
@@ -28,5 +29,19 @@
             </div>
         <% end %>
     </div>
+
+    <h2>Purchased Orders</h2>
+    <div class="show-container">
+    <% @movie_orders.map do |order| %>
+        <div class="showtime">
+            <h3> <%= "Order Id:  #{order.id}" %> </h3> 
+            <h3> <%= "Showtime Id: #{order.showtime_id}" %> </h3> 
+            <h3> <%= "Credit Card Number: #{order.credit_card_number}" %> </h3> 
+            <h3> <%= "Expiration Date: #{order.expiration_date}" %> </h3>
+            <h3> <%= "Total Cost: $#{order.total_cost}.00" %> </h3> 
+            <h3> <%= "Total Seats: #{order.total_seats_selected}" %> </h3>
+        </div>
+    <% end %>
+</div>
 
 
