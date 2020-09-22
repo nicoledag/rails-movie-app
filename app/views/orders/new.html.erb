@@ -1,3 +1,12 @@
+<div class="container-form">
+
+<h2>Order Tickets</h2>
+
+<h4> <%= "#{@order.showtime.format_date}" %> </h4> 
+<h4> <%= "#{@order.showtime.format_time}" %> </h4> 
+<h4> <%= "Seats Available: #{@order.showtime.seats_available}" %> </h4> 
+<h4> <%= "Seat Cost: $ #{@order.showtime.seat_cost}.00" %> </h4> 
+
 <%=form_for @order do |f| %>
 
   <%= render partial: 'layouts/errors', locals: {object: @order} %>
