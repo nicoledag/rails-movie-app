@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
 
     def logged_in?
         !!current_user
-        # A "double-bang operator" (!!) will return true or false based on whether a value is truthy or falsey to begin with.
     end
 
     def redirect_if_not_logged_in
@@ -29,7 +28,4 @@ class ApplicationController < ActionController::Base
     #     session[:user_id] = @user.id
     # end
 
-    # def project_user_equals_current_user
-    #     @project.user == current_user
-    # end
 end
