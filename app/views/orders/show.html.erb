@@ -1,5 +1,9 @@
-<h3><%= link_to "Login to order tickets", login_path %></h3>
+<h2>Your Placed Order</h2>
 
-<% if logged_in? %>
+<h4> <%= "#{@order.showtime_id}" %> </h4> 
+<h4> <%= "#{@order.user_id}" %> </h4> 
+<h4> <%= "#{@order.credit_card_number}" %> </h4> 
+<h4> <%= "#{@order.expiration_date}" %> </h4> 
+<h4> <%= "#{@order.total_seats_selected}" %> </h4> 
+<h4> <%= "#{@order.total_cost}" %> </h4> 
 
-<% end %>
