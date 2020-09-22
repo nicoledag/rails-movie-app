@@ -15,5 +15,9 @@ class Order < ApplicationRecord
         end
     end
 
+    def self.order_newest
+        self.order(created_at: :desc)
+    end
+
 
 end

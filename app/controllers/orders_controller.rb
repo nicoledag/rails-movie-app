@@ -3,11 +3,11 @@ class OrdersController < ApplicationController
     before_action :set_order, only: [:show]
 
     def all_orders
-      @orders = Order.all
+      @orders = Order.all.order(created_at: :desc)
     end
 
     def index
-        @orders = current_user.orders
+        @orders = current_user.orders.order(created_at: :desc)
     end
 
     def new

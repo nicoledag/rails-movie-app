@@ -23,7 +23,7 @@
          <a href="<%=orders_path%>">Customer Orders</a>
          <% end %>
          <% if logged_in? %>
-         <a href="<%= all_orders_path %>">Order Summary</a>
+         <a href="<%= all_orders_path %>">All Orders</a>
          <% end %>
          <% if current_user %>
          <a href="<%=logout_path%>">Sign out</a>
