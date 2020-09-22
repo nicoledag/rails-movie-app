@@ -1,3 +1,25 @@
 // Place all the styles related to the Orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.orders-container {
+    // border: black 1px solid;
+}
+
+.orders-container h2 {
+    margin-left: 15px; ;
+}
+
+
+.order-link {
+    border: black 1px solid;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.order-link h4 {
+    color: black;
+}

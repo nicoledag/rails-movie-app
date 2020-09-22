@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
     before_action :set_order, only: [:show]
 
     def index
-        @order = Order.all
+        @orders = Order.all
     end
 
     def new

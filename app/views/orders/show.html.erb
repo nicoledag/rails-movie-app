@@ -1,9 +1,11 @@
+<div class= "orders-container">
 <h2>Your Placed Order</h2>
-
-<h4> <%= "#{@order.showtime_id}" %> </h4> 
-<h4> <%= "#{@order.user_id}" %> </h4> 
-<h4> <%= "#{@order.credit_card_number}" %> </h4> 
-<h4> <%= "#{@order.expiration_date}" %> </h4> 
-<h4> <%= "#{@order.total_seats_selected}" %> </h4> 
-<h4> <%= "#{@order.total_cost}" %> </h4> 
-
+    <div class="order-link">
+        <h4> <%= "Showtime Id:  #{@order.showtime_id}" %> </h4> 
+        <h4> <%= "User Id:  #{@order.user_id}" %> </h4> 
+        <h4> <%= "Credit Card No.:  #{@order.credit_card_number}" %> </h4> 
+        <h4> <%= "Expiraton Date:  #{@order.expiration_date}" %> </h4> 
+        <h4> <%= "No.of Seats Purchased:  #{@order.total_seats_selected}" %> </h4> 
+        <h4> <%= "Total Costs:  #{@order.total_cost}" %> </h4> 
+    </div>
+</div>
