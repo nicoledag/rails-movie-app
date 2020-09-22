@@ -19,9 +19,9 @@ class Order < ApplicationRecord
         self.order(created_at: :desc)
     end
 
-    # def self.orders_by_movie
-    #     self.sort_by{|order| order.}
-    # end
+    def format_created_at_date
+        self.created_at.strftime("%a, %m/%d/%Y")
+    end
 
 
 end
