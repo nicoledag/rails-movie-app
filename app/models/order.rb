@@ -4,8 +4,8 @@ class Order < ApplicationRecord
     belongs_to :user
     
     validates :total_seats_selected, :credit_card_number, :expiration_date, presence: true
-    # validates :total_seats_selected, length: { in: 1..6 }
     validates :credit_card_number, length: { in: 13..16 }
+    validates :total_seats_selected, :numericality => { greater_than_or_equal_to: 0, less_than: 6 }
 
     validate :expiration_date_checker
 
