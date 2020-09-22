@@ -4,6 +4,7 @@ class Showtime < ApplicationRecord
     has_many :orders
 
     validates :seats_available, :seat_cost, :start_time, presence: true
+    validates :seats_available, numericality: { greater_than: 0 }
 
     # vailidate :seats_available_for_purchase
 
