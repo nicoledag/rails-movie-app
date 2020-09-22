@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
     # skip_before_action :redirect_if_not_logged_in
 
+    
     def new
         if logged_in?
         redirect_to root_path
