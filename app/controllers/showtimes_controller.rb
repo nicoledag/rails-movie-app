@@ -4,7 +4,7 @@ class ShowtimesController < ApplicationController
     def new
       # binding.pry
       if (params[:showtime_id]) && @showtime = Showtime.find_by_id(params[:showtime_id])
-        @order = @showtime.orders.build #adds showtime id to project.
+        @order = @showtime.orders.build 
       else
         @order = Order.new
       end
