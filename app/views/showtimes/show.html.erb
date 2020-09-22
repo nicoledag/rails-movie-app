@@ -22,17 +22,17 @@
  
  <div class="row"> 
   <%= f.label :total_seats_selected %>
-  <%= f.number_field :total_seats_selected %>
+  <%= f.number_field :total_seats_selected, :required => true %>
  </div>
 
  <div class="row"> 
   <%= f.label :credit_card_number %>
-  <%= f.text_field :credit_card_number %>
+  <%= f.text_field :credit_card_number, :required => true %>
  </div>
  
  <div class="row"> 
   <%= f.label :expiration_date %>
-  <%= f.date_field :expiration_date %>
+  <%= f.date_field :expiration_date, :required => true %>
  </div>
  
   <%= submit_tag "Submit" %>
