@@ -1,5 +1,7 @@
 <div class= "orders-container">
-    <h2>All Orders</h2>
+<% if logged_in? %>    
+<h2><%= "#{current_user.username}'s Orders" %></h2>
+<% end %>
     <% @orders.each do |o| %>
         <div class="order-link">
         <%= link_to order_path(o) do %>
