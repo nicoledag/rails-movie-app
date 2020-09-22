@@ -25,6 +25,9 @@
          <% if logged_in? %>
          <a href="<%= all_orders_path %>">All Orders</a>
          <% end %>
+         <% if logged_in? %>
+         <a href="<%= orders_by_movie_path %>">Orders by Movie</a>
+         <% end %>
          <% if current_user %>
          <a href="<%=logout_path%>">Sign out</a>
          <% end %>

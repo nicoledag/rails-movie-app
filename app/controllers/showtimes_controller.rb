@@ -1,6 +1,10 @@
 class ShowtimesController < ApplicationController
     before_action :set_movie, only: [:show]
 
+    def orders_by_movie
+
+    end
+
     def new
       # binding.pry
       if (params[:showtime_id]) && @showtime = Showtime.find_by_id(params[:showtime_id])
