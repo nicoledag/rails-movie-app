@@ -1,7 +1,9 @@
 <div class= "orders-container">
-<% if logged_in? %>    
+
 <h2><%= "All Orders" %></h2>
-<% end %>
+<h2> Total Revenue $<%= Order.total_revenue %>.00</h2>
+
+
     <% @orders.each do |o| %>
         <div class="order-link">
         <%= link_to order_path(o) do %>
@@ -11,7 +13,7 @@
             <h4> <%= "Credit Card No.: #{o.credit_card_number}" %> </h4> 
             <h4> <%= "Expiration Date:  #{o.expiration_date}" %> </h4> 
             <h4> <%= "No. of Seats Purchased:  #{o.total_seats_selected}" %> </h4> 
-            <h4> <%= "Total Cost:  #{o.total_cost}" %> </h4>
+            <h4> <%= "Total Cost:  $#{o.total_cost}.00" %> </h4>
         <% end %>
         </div>
     <% end %>

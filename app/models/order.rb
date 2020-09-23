@@ -9,6 +9,10 @@ class Order < ApplicationRecord
 
     validate :expiration_date_checker
 
+    def self.total_revenue
+        self.sum("total_cost")
+    end
+
     def expiration_date_checker
         if expiration_date && expiration_date < DateTime.now
             errors.add :expiration_date, 'expiration date has expired'
@@ -22,6 +26,7 @@ class Order < ApplicationRecord
     def format_created_at_date
         self.created_at.strftime("%a, %m/%d/%Y")
     end
+
 
 
 end
