@@ -10,14 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_20_142547) do
-
-  create_table "auditoria", force: :cascade do |t|
-    t.integer "seats_available"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "cost"
-  end
+ActiveRecord::Schema.define(version: 2020_09_23_025842) do
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
