@@ -21,7 +21,7 @@
     Movie.create(title: 'Captain America: The First Avenger', length: '2h 4m', image: 'Captain America.jpg')
     Movie.create(title: 'The Holiday', length: '2h 15m', image: 'The Holiday.jpg')
 
-?
+
 #     # Auditorium.create(seats_available: 25, cost: 11.00)
 #     # Auditorium.create(seats_available: 25, cost: 11.00)
 #     # Auditorium.create(seats_available: 25, cost: 11.00)
