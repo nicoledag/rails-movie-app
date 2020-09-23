@@ -25,23 +25,23 @@ License: The gem is available as open source under the terms of the MIT License.
 Purpose
 A movie theater responsive web application to sell online tickets.  
 
-User Functionality
-sign up, login and logout.
-can view all movies with showtimes.
-cannot buy tickets once the show is sold out.
-can buy multiple tickets for one show at a time.
-can check out with name, email, credit card and expiration.
-will see validations for incorrect check out information.
+User Functionality:
+Sign up, login and logout.
+Can view all movies with showtimes.
+Cannot buy tickets once the show is sold out.
+Can buy multiple tickets for one show at a time.
+Can check out with name, email, credit card and expiration.
+Will see validations for incorrect check out information.
 
 
-User / Admin Functionality
-can view list of all orders.
-can view list of all orders for each movie.
-can view total revenue.
+User / Admin Functionality: 
+Can view list of all orders.
+Can view list of all orders for each movie.
+Can view total revenue.
 
-Movie Functionality
-is available to see on multiple days.
-has a limited number of sets.
+Movie Functionality:
+Is available to see on multiple days.
+Has a limited number of sets.
 
 
 
