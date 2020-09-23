@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version:  ruby '2.6.1'
+BCrypt for password authentication.
 
-Things you may want to cover:
 
-* Ruby version
+Purpose
+A movie theater responsive web application to sell online tickets.  
 
-* System dependencies
+User Functionality
+sign up, login and logout.
+can view all movies with showtimes.
+cannot buy tickets once the show is sold out.
+can buy multiple tickets for one show at a time.
+can check out with name, email, credit card and expiration.
+will see validations for incorrect check out information.
 
-* Configuration
 
-* Database creation
+User / Admin Functionality
+can view list of all orders.
+can view list of all orders for each movie.
+can view total revenue.
 
-* Database initialization
+Movie Functionality
+is available to see on multiple days.
+has a limited number of sets.
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
