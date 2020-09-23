@@ -6,7 +6,7 @@ class CreateOrders < ActiveRecord::Migration[6.0]
       t.integer :credit_card_number
       t.date :expiration_date
       t.integer :total_seats_selected
-      t.decimal :total_cost
+      t.integer :total_cost
 
       t.timestamps
     end
