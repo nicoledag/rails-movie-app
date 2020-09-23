@@ -2,8 +2,6 @@
 
 Ruby version:  ruby '2.6.1'
 
-BCrypt for password authentication.
-
 Install Instructions
 
 git clone git@github.com:nicoledag/rails-movie-app.git
