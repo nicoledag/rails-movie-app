@@ -16,7 +16,7 @@
 
     </div>
     
-    <h2>Showtimes</h2> 
+    <h2 class="title">Showtimes</h2> 
     <div class="show-container">
         <% @movie.showtimes.each do |s| %>
             <div class="showtime">
@@ -30,7 +30,7 @@
         <% end %>
     </div>
 
-    <h2>Purchased Orders</h2>
+    <h2 class="title">Purchased Orders</h2>
     <div class="show-container">
     <% @movie_orders.map do |order| %>
         <div class="showtime">
