@@ -5,7 +5,6 @@
     <% @orders.each do |o| %>
         <div class="order-link">
         <%= link_to order_path(o) do %>
-            <h4> <%= "Date Created:  #{o.format_created_at_date}" %> </h4> 
             <h4> <%= "Created Date:  #{o.format_created_at_date}" %> </h4> 
             <h4> <%= "Showtime Id:  #{o.showtime_id}" %> </h4> 
             <h4> <%= "User Id:  #{o.user_id}" %> </h4> 
