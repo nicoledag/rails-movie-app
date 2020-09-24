@@ -20,7 +20,7 @@ class OrdersController < ApplicationController
         end
         
       def create
-        binding.pry
+        # binding.pry
             @user = current_user
             @showtime = Showtime.find_by_id(params[:order][:showtime_id]) 
             @order = @user.orders.build(orders_params) 
