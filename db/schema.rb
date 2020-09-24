@@ -10,21 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_23_025842) do
+ActiveRecord::Schema.define(version: 2020_09_19_233033) do
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
+    t.integer "movie_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "movie_id"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.string "length"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "image"
   end
 
   create_table "orders", force: :cascade do |t|
@@ -33,19 +33,19 @@ ActiveRecord::Schema.define(version: 2020_09_23_025842) do
     t.integer "credit_card_number"
     t.date "expiration_date"
     t.integer "total_seats_selected"
+    t.integer "total_cost"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "total_cost"
   end
 
   create_table "showtimes", force: :cascade do |t|
     t.integer "movie_id"
     t.date "date"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.time "start_time"
     t.integer "seats_available"
     t.integer "seat_cost"
-    t.time "start_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
