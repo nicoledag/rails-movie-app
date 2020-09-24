@@ -10,14 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2020_09_24_223633) do
-=======
-ActiveRecord::Schema.define(version: 2020_09_24_220350) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
->>>>>>> 8912cb6ed965812d33f431966ce4a6e7e65a454a
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
@@ -37,11 +33,7 @@ ActiveRecord::Schema.define(version: 2020_09_24_220350) do
   create_table "orders", force: :cascade do |t|
     t.integer "showtime_id"
     t.integer "user_id"
-<<<<<<< HEAD
-    t.integer "credit_card_number", limit: 8
-=======
     t.bigint "credit_card_number"
->>>>>>> 8912cb6ed965812d33f431966ce4a6e7e65a454a
     t.date "expiration_date"
     t.integer "total_seats_selected"
     t.integer "total_cost"
