@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_19_233033) do
+ActiveRecord::Schema.define(version: 2020_09_24_223633) do
 
   create_table "genres", force: :cascade do |t|
     t.string "name"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_09_19_233033) do
   create_table "orders", force: :cascade do |t|
     t.integer "showtime_id"
     t.integer "user_id"
-    t.integer "credit_card_number"
+    t.integer "credit_card_number", limit: 8
     t.date "expiration_date"
     t.integer "total_seats_selected"
     t.integer "total_cost"
