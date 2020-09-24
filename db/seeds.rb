@@ -792,8 +792,8 @@ Showtime.create(movie_id: 9, date: "2020-10-11", start_time: '17:00', seats_avai
 Showtime.create(movie_id: 9, date: "2020-10-11", start_time: '20:00', seats_available: 25, seat_cost: 11)
 Showtime.create(movie_id: 9, date: "2020-10-11", start_time: '23:00', seats_available: 25, seat_cost: 11)
 
-Order.create(showtime_id: 1, user_id: 1, credit_card_number: 111111111111111, expiration_date: "2025-10-01", total_seats_selected: 2, total_cost: 22)
-Order.create(showtime_id: 19, user_id: 2, credit_card_number: 222222222222222, expiration_date: "2023-6-29", total_seats_selected: 3, total_cost: 33)
-Order.create(showtime_id: 79, user_id: 3, credit_card_number: 333333333333333, expiration_date: "2022-1-22", total_seats_selected: 1, total_cost: 11)
+# Order.create(showtime_id: 1, user_id: 1, credit_card_number: 111111111111111, expiration_date: "2025-10-01", total_seats_selected: 2, total_cost: 22)
+# Order.create(showtime_id: 19, user_id: 2, credit_card_number: 222222222222222, expiration_date: "2023-6-29", total_seats_selected: 3, total_cost: 33)
+# Order.create(showtime_id: 79, user_id: 3, credit_card_number: 333333333333333, expiration_date: "2022-1-22", total_seats_selected: 1, total_cost: 11)
 
 
