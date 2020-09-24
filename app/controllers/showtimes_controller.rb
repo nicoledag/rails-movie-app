@@ -21,6 +21,8 @@ class ShowtimesController < ApplicationController
       end
     end
 
+    private
+
     def set_movie
         @showtime = Showtime.find_by(id: params[:id])
         if !@showtime

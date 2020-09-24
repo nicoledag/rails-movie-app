@@ -13,6 +13,7 @@ class MoviesController < ApplicationController
         @movie_orders = @movie.orders
     end
 
+    private
 
     def set_movie
         @movie = Movie.find_by(id: params[:id])
