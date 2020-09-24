@@ -38,7 +38,7 @@ class OrdersController < ApplicationController
               @total_seats_selected = @order.total_seats_selected
               @seats_available = @showtime.seats_available
               @new_seats_available =  @seats_available - @total_seats_selected
-              @showtime.update(@seats_available: @new_seats_available)
+              @showtime.update(seats_available: @new_seats_available)
           
               redirect_to order_path(@order)
             else
