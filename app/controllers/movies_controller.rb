@@ -11,6 +11,7 @@ class MoviesController < ApplicationController
         # binding.pry
 
         @movie_orders = @movie.orders
+        @showtime = @movie.showtimes.order_by_id
     end
 
     private

@@ -24,7 +24,7 @@ class ShowtimesController < ApplicationController
     private
 
     def set_movie
-        @showtime = Showtime.find_by(id: params[:id])
+        @showtime = Showtime.find_by(id: params[:id]) 
         if !@showtime
           redirect_to root_path
         end

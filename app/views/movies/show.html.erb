@@ -18,7 +18,7 @@
     
     <h2 class="title">Showtimes</h2> 
     <div class="show-container">
-        <% @movie.showtimes.each do |s| %>
+        <% @showtime.each do |s| %>
             <div class="showtime">
             <%= link_to showtime_path(s) do %>
                 <h3> <%= "#{s.format_date}" %> </h3> 

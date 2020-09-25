@@ -14,6 +14,9 @@ class Showtime < ApplicationRecord
         self.start_time.strftime("%l:%M %p")
     end
 
+    def self.order_by_id
+        self.order(:id)
+    end
    
 
 

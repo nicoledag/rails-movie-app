@@ -5,5 +5,9 @@ class Movie < ApplicationRecord
     has_many :orders, through: :showtimes
 
     validates :title, :length, :image, presence: true
+
+
+   
+
     
 end
