@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
 
  
     def index
+      # binding.pry
         @orders = current_user.orders.order(created_at: :desc)
     end
 
@@ -55,6 +56,7 @@ class OrdersController < ApplicationController
 
 
     def show
+      # binding.pry
 
     end
 
