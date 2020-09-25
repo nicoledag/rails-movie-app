@@ -2,7 +2,9 @@
 <h2>Your Placed Order</h2>
     <div class="order-link">
         <h4> <%= "Date Created:  #{@order.format_created_at_date}" %> </h4> 
-        <h4> <%= "Showtime Id:  #{@order.showtime_id}" %> </h4> 
+        <h4> <%= "Movie Title:  #{@movie.title}" %> </h4> 
+        <h4> <%= "Showtime Start Time:  #{@showtime.format_time}" %> </h4> 
+        <h4> <%= "Showtime Date:  #{@showtime.format_date}" %> </h4> 
         <h4> <%= "Credit Card No.:  #{@order.credit_card_number}" %> </h4> 
         <h4> <%= "Expiraton Date:  #{@order.expiration_date}" %> </h4> 
         <h4> <%= "No.of Seats Purchased:  #{@order.total_seats_selected}" %> </h4> 

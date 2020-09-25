@@ -57,7 +57,8 @@ class OrdersController < ApplicationController
 
     def show
       # binding.pry
-
+      @showtime = Showtime.find_by(id:@order.showtime_id)
+      @movie = Movie.find_by(id:@showtime.movie_id)
     end
 
     private
